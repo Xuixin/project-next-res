@@ -1,9 +1,8 @@
-import Image from "next/image";
-
+"use client";
 export default function Home() {
   return (
-    <main className=" min-h-full w-screen bg-base-200 mb-5 rounded-tr-lg rounded-br-lg">
-      <h1>Heelow</h1>
+    <main className="ml-[280px] border mr-10 min-h-full">
+      <div><a href="#" className="text-black">aaa</a></div>
     </main>
   );
 }
