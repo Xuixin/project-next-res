@@ -11,21 +11,23 @@ export default function Home() {
             เข้าสู่ระบบ
           </button>
         </div>
-        <div className=""></div>
+        <div className="none"></div>
       </div>
 
       {/*dialog00 */}
-      <dialog id="formLogin" className="modal max-w-max ">
+      <dialog id="formLogin" className="modal max-w-max rounded">
         <div className="modal-box bg-base-200">
-          <form method="dialog" className=" flex flex-col justify-between bg-base-200">
+          <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
             <button
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
               type="button"
-              onClick={() => document.getElementById("formLogin").showModal(false)}
+              onClick={() => document.getElementById('formLogin').close()}
             >
               ✕
             </button>
+          </form>
+          <form className=" flex flex-col justify-between bg-base-200">
             <label htmlFor="username" className="block mb-2">
               Username:
             </label>
@@ -48,10 +50,11 @@ export default function Home() {
               placeholder="Enter your password"
               required
             />
+
             <div className="flex items-center justify-center">
-            <button type="submit" className="btn  btn-primary">
-              Login
-            </button>
+              <button type="submit" className="btn  btn-primary">
+                Login
+              </button>
             </div>
           </form>
         </div>
