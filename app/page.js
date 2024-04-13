@@ -1,7 +1,10 @@
-"use client";
+'use client'
+
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className=" min-h-full w-full">
+    <main className=" min-h-full w-[1059px]">
       <div>
         <div className="flex justify-end w-full mt-4">
           <button
@@ -11,7 +14,9 @@ export default function Home() {
             เข้าสู่ระบบ
           </button>
         </div>
-        <div className="none"></div>
+        <div className="a">
+          <Link href="./Menu">go menu</Link>
+        </div>
       </div>
 
       {/*dialog00 */}
